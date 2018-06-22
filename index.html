@@ -6,13 +6,15 @@
 </head>
 <body>
   <header class="main-header">
-    <!-- Здесь будет форма "поиск по сайту" -->
+    <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+      <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+      <input id="search-field" type="search" name="search" placeholder="Поиск по сайту">
+      <button class="search-button" type="submit">Искать</button>
+    </form>
     <a class="main-header-button" href=#">Сравнить</a>
     <a class="main-header-button" href="cart.html">Корзина</a>
     <nav cass="main-navigation">
-      <a class="main-header-logo">
-        <span class="logo">Device</span>
-      </a>
+      <a class="main-header-logo">Device</a>
       <ul class="site-navigation">
         <li>Каталог товаров
           <ul>
@@ -29,7 +31,9 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="login-link">Войти</li>
+        <li class="login-item">
+          <a class="login-link" href="login.html">Войти</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -96,9 +100,15 @@
         </li>
       </ul>
       <ul class="slider-switches">
-        <li class="slide-button">Слайд 1</li>
-        <li class="slide-button">Слайд 2</li>
-        <li class="slide-button">Слайд 3</li>
+        <li class="slide-button">
+          <button class="slide-button slide-button-current" type="button"><span class="visually-hidden">Слайд 1</span></button>
+        </li>
+        <li class="slide-button">
+          <button class="slide-button" type="button"><span class="visually-hidden">Слайд 2</span></button>
+        </li>
+        <li class="slide-button">
+          <button class="slide-button" type="button"><span class="visually-hidden">Слайд 3</span></button>
+        </li>
       </ul>
     <section class="popular-categories">
       <h2 class="visually-hidden">Популярные категории</h2>
@@ -140,9 +150,15 @@
         </li>
       </ul>
       <ul class="services-switches">
-        <li class="base-button services-switches-button">Доставка</li>
-        <li class="base-button services-switches-button">Гарантия</li>
-        <li class="base-button services-switches-button">Кредит</li>
+        <li class="services-switches-item">
+          <button class="base-button services-switches-button services-switches-button-current">Доставка</button>
+        </li>
+        <li class="services-switches-item">
+          <button class="base-button services-switches-button">Гарантия</button>
+        </li>
+        <li class="services-switches-item">
+          <button class="base-button services-switches-button">Кредит</button>
+        </li>
       </ul>
     </section>
     <section class="brands">
@@ -163,7 +179,7 @@
         <li class="trucing-item">Автотрейдинг</li>
         <li class="trucing-item">ЖелДорЭкспедиция</li>
       </ul>
-      <a class="about-us-buttom base-button" href="about-us.html">Подробнее о нас</a>
+      <a class="base-button about-us-buttom" href="about-us.html">Подробнее о нас</a>
     </section>    
     <section class="contacts">
       <h2>Контакты</h2>
@@ -171,15 +187,13 @@
       <a href="#">
         <img src="img/map.png" width="560" height="222" alt="Карта с адресом офиса магазина DEVICE">
       </a>
-      <a class="contacts-button base-button" href="contacts.html">Напишите нам</a>
+      <a class="base-button contacts-button" href="contacts.html">Напишите нам</a>
     </section>
   </main>
 
   <footer class="main-footer">
     <div class="left-side">
-      <a class="main-footer-logo">
-        <span class="logo">Device</span>
-      </a>
+      <a class="main-footer-logo">Device</a>
       <p>г.Москва,ул.Строителей,15</p>
     </div>
     <div class="center">
@@ -196,7 +210,9 @@
     </div>
     <div class="right-side">
       <ul class="user-navigation">
-        <li class="login-link">Войти</li>
+        <li class="login-item">
+          <a class="login-link" href="login.html">Войти</a>
+        </li>
       </ul>
       <a class="main-footer-button" href="#">Сравнить</a>
       <a class="main-futter-button" href="cart.html">Корзина</a>
@@ -209,14 +225,31 @@
 
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
+    <form class="form-feedback" action="https://htmlacademy.ru method="post">
+      <p class="form-feedback-name">
+        <label class="label-field" for="form-field-name">Ваше имя:</label>
+        <input id="form-field-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="form-feedback-email">
+        <label class="label-field" for="form-field-email">Ваш e-mail:</label>
+        <input id="form-field-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p class="form-feedback-text">
+        <label class="label-field">Текст письма:
+          <textarea class="field-text" name="text" placeholder="В свободной форме"></textarea>
+        </label>
+      </p>
+      <button class="base-button form-button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть окно формы обратной связи</button>
   </section>
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <img src="img/map-big.png" width="960" height="559" alt="Карта с адресом офиса магазина DEVICE">
-    <span class="modal-close">x</span>
+    <p>
+      <img src="img/map-big.png" width="960" height="559" alt="Jфиса магазина DEVICE по адресу: ул.Строителей,15">
+    </p>
+    <button class="modal-close">Закрыть окно с картой</button>
   </section>    
 </body>
 </html>
