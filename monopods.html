@@ -51,14 +51,18 @@
     <aside class="filter">
       <h2>Фильтр:</h2>
       <!-- Здесь будет форма -->
-      <form class="filter-producr" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="set-price">
-          <legend class="filter-label">Стоимость</legend>
-          <input class="min-price" type="range" min="0" max="20000" name="min-price" value="0" step="10">
-          <input class="max-price" type="range" min="0" max="20000" name="max-price" value="20000" step="10">
-        </fieldset>
-        <fieldset class="set-color">
-          <legend class="filter-label">Цвет</legend>
+      <form class="filter-product" action="https://echo.htmlacademy.ru" method="post">
+        <div class="set-price">
+          <h3>Стоимость</h3>
+          <label class="visually-hidden">Выбор минимальной стоимость
+            <input class="min-price" type="range" min="0" max="20000" name="min-price" value="0" step="10">
+          </label>
+          <label class="visually-hidden">Выбор максимальной стоимость
+            <input class="max-price" type="range" min="0" max="20000" name="max-price" value="20000" step="10">
+          </label>
+        </div>
+        <div class="set-color">
+          <h3>Цвет</h3>
           <label class="label-field">
             <input type="checkbox" name="black" checked> Черный
           </label>
@@ -74,17 +78,17 @@
           <label class="label-field">
             <input type="checkbox" name="pink"> Розовый
           </label>
-        </fieldset>
-        <fieldset class="set-bluetooth">
-          <legend class="filter-label">Bluetooth</legend>
+        </div>
+        <div class="set-bluetooth">
+          <h3>Bluetooth</h3>
           <label class="label-field">
             <input type="radio" name="bluetooth" value="yes" checked> Есть
           </label>
           <label clas="label-field">
             <input type="radio" name="bluetooth" value="no"> Нет
           </label>
-        </fieldset>
-        <button type="submit">Показать</button>
+        </div>
+        <button class="base-button filter-button" type="submit">Показать</button>
       </form>
     </aside>
     <section class="sorting">
