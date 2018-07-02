@@ -1,0 +1,322 @@
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"), local("Gilroy-Extrabold"),
+       url(fonts/gilroyextrabold.woff) format("woff"),
+       url(fonts/gilroyextrabold.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gioroy"), local("Giolroy-Light"),
+       url("fonts/gilroylight.woff") format("woff"),
+       url("fonts/gilroylight.woff2") format("w0ff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), local("OpenSance-Regular"),
+       url("fonts/opensans.woff") format("woff"),
+       url("fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), local("OpenSans-Light"),
+       url("fonts/opensanslight.woff") format("woff"),
+       url("fonts/opensanslight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy", "Verdana", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: #f7e296;
+}
+
+.main-header-logo {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+}
+
+.site-navigation,
+.site-navigation ul,
+.user-navigation {
+  list-style: none;
+}
+
+.form-search input[type="search"]::placeholder,
+.main-header-button,
+.site-navigation .subitem-link,
+.user-navigation .login-link{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+
+.form-search input[type="search"] {
+  background-color: #f7e296;
+  border: none;
+}
+
+.form-search input[type="search"]::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form-search input[type="search"]:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form-search input[type="search"]:focus {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+
+  outline: none;
+  border-bottom: 2px solid #000000;
+}
+
+.search-button {
+  font-family: "Open Sans", "Arial" sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: inherit;
+  border: 2px solid #000000;
+}
+
+.search-button:hover,
+.search-button:focus {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.site-navigation .subitem-link {
+  line-height: 36px;
+}
+
+.site-navigation .item-link {
+  letter-spacing: 3.6px;
+  color: #000000;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.main-header a:link,
+.main-header a:visited {
+  color: #000000;
+}
+
+.main-header a:hover,
+.main-header a:focus {
+  color:rgba(0, 0, 0, 0.6);
+}
+
+.main-header a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.slide-list,
+.slider-switches {
+  list-style: none;
+}
+
+.slide-list .slogan {
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.56px;
+}
+
+.slide-list p {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+
+.base-button {
+  font: inherit;
+
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  text-align: center;
+  vertical-align: middle;
+
+  border: none;
+  background-color: inherit;
+}
+
+.base-button:link,
+.base-button:visited {
+  color: #000000;
+  background: url("img/bg2.png") repeat-x 0 50%;
+}
+
+.base-button:hover,
+.base-button:focus {
+  color: #000000;
+  outline: none;
+  background-color: #f0c52e;
+}
+
+.base-button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f0c52e;
+}
+
+.characteristics tr:first-child {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+
+.characteristics tr:last-child {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+}
+
+.popular-categories ul {
+  list-style: none;
+}
+
+.popular-categories a {
+  color: #000000;
+  letter-spacing: 0.18px;
+}
+
+.popular-categories a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.services-list,
+.services-switches {
+  list-style: none;
+}
+
+.services h3,
+.about-us h2,
+.contacts h2 {
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+}
+
+.services p,
+.about-us p,
+.contacts p {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.services p {
+  letter-spacing: 0.15px;
+}
+
+.brands-list {
+  list-style: none;
+}
+
+.brands-item {
+  opacity: 0.2; /*нужно наложить серый цвет*/
+}
+
+.about-us .trucing-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.main-footer-logo {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #ffc600;
+  letter-spacing: 0.48px;
+}
+
+.main-footer p {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.center {
+  text-align: center;
+}
+
+.main-footer .site-navigation .item-link {
+  color: #ffffff;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.main-footer .login-link {
+  color: #ffffff;
+}
+
+.right-side {
+  text-align: right;
+}
+
+
+
+
+
