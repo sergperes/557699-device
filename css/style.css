@@ -190,7 +190,7 @@ a {
 .base-button:link,
 .base-button:visited {
   color: #000000;
-  background: url("img/bg2.png") repeat-x 0 50%;
+  background: url("img/bg-button.png") repeat-x 0 50%;
 }
 
 .base-button:hover,
